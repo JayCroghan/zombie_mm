@@ -1,0 +1,28 @@
+Play Step Sound ?
+DODS
+
+Specs at round_start
+
+anything available via a change event should be cached.
+
+zombification event
+
+terrorists win [?]
+
+client setting zombie_vision [?]
+
+models loaded before cfg?
+
+speed [?]
+
+napalm [?]
+
+zombie claws not counting as kills??
+
+falldamage output [X]
+
+
+option to disable console log [X]
+
+
+zm_

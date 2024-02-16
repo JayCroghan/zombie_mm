@@ -1,0 +1,106 @@
+Installing Zombiemod
+=====================
+Before continuing, please download and install MetaMod:Source from www.sourcemm.net
+Now, copy the zip contents as they are in the zip archive to your cstrike folder.
+
+cstrike/addons/zombiemod/zombiemod_mm.dll
+cstrike/addons/zombiemod/zombiemod_mm_i486.so
+cstrike/addons/metamod/zombiemod.vdf
+cstrike/cfg/zombiemod/models.cfg
+cstrike/cfg/zombiemod/downloads.cfg
+cstrike/cfg/zombiemod/signatures.kv
+cstrike/cfg/zombiemod/zombie_classes.cfg
+cstrike/cfg/zombiemod/de_dust.cfg
+cstrike/models/player/zombiemod/*Six Models 36 Files*
+cstrike/materials/models/player/zombiemod/*Three Materials*
+cstrike/materials/skybox/*Seven materials*
+cstrike/sound/ambient/zombiemod/zombie_ambient.mp3
+cstrike/materials/vgui/hud/zombiemod/zombie_vision_dx6.vmt
+cstrike/materials/vgui/hud/zombiemod/zombie_vision.vmt
+cstrike/materials/vgui/hud/zombiemod/zombie_vision.vtf
+
+
+NOTE: If you use sv_downloadurl, then please upload the contents of the models, materials and sound folder to the remote http server.
+Otherwise, no one will be able to download the files.
+If you want, you can bzip them all to reduce download times even further.
+
+
+
+
+
+
+
+***** New MetaMod Loading Method *****
+Simply start metamod with the zombiemod.vdf file in the correct location.
+**************************************
+
+***** Old MetaMod Loading Method *****
+Once everything is uploaded, open cstrike/addons/cfg/metamod/metaplugins.ini with your favourite text editor.
+Add the following line.
+
+addons/zombiemod/bin/zombie_mm
+**************************************
+
+Now, restart your server and when you type 'meta list' the following should be printed in your console.
+
+ -Id- Name Version Author Status
+[01] ZombieMod v3.0.0  c0ldfyr3 RUN
+
+As long as it says RUN we are ok to go.
+If it says 'NOFILE', the line in metaplugins.ini is incorrect, or the zombiemod binaries are not in the correct location.
+If it says 'ERROR', then you have a problem and may contact the author.
+
+
+
+
+If you are having issues loading other plugins please disable zombie_game_description in your zombiemod.cfg.
+
+
+
+
+Configuration
+====================
+The entire CVAR list for Zombie Mod is now in cfg/zombiemod/zombiemod.cfg
+
+
+Using ZombieMod
+====================
+To enable ZombieMod, type 'zombies' at the console, or 'rcon zombies' from your client.
+
+---- > PLEASE DO NOT ENTER THIS IN ANY CONFIG FILES TO BE EXECUTED AT STARTUP. < ----
+
+If zombie_dark is enabled, the map will restart and the games will begin.
+
+
+
+
+
+
+
+Player Notes
+====================
+There are three player commands and one player chat command. They are as follows.
+
+Commands:
+	+jetpack			When you are a zombie or a human depending on the cvars, allows jet pack for a cvar controlled amount of seconds per round per player.
+	zombie_respawn			If zombie_respawn is enabled on the server, this will automatically respawn a player after zombie_respawn_delay seconds.
+	scream				While you are a zombie, this command will make you emit a scream.
+	zombie_vision_enabled	1/0	Permanently tell the mod not to enable zombie vision for certain players.
+	zombie_respawn			Respawns a player if repsawn is enabled.
+	zombie_class_menu		Displays class selection menu.
+
+Chat Commands:
+	!zhelp		Displays the ZombieMod help dialog.
+	!zstuck		If two players are stuck together, slaps one away from the other.
+	!ztele		Teleports a player back to spawn.
+	!zclasses	Shows an MOTD window with current class information.
+	!zmenu		Shows main Zombie Mod player menu.
+	!zclassmenu	Shows class selection menu.
+	!zstart		If zombie mod won't start for some reason players can rtv style kick it into action.
+	!z3		????
+
+
+
+Support
+====================
+To obtain support, please visit the support desk at http://www.zombiemod.com/support

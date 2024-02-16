@@ -1,0 +1,60 @@
+
+- Sometimes humans remain immortal and cannot be killed by zombies
+Sometimes, humans live endlessly with their protection on. Joining the Terrorist team and using !zspawn right before the round starts seems to cause this the most. Not 100% though. Any ideas? Thanks in advance.
+
+
+remove pistol before giving it?
+
+Proper random zombie.
+Last Player disconnects pick another zombie.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  give [dead player] env_entity_dissolver
+  set [dead player] env_entity_dissolver AddOutput "target cs_ragdoll"
+  set [dead player] env_entity_dissolver AddOutput "magnitude 1"
+  set [dead player] env_entity_dissolver AddOutput "dissolvetype 3" (can be disove type 2,1 etc)
+ 
+  // Dissolve the body
+  fire [dead player] env_entity_dissolver Dissolve
+  
+  // Kill the dissolver
+  delayed 1 do ent_remove env_entity_dissolver
+  
+  
+  
+  pPlayer->GiveNamedItem( STRING(iszItem) );
+  CBaseEntity_KeyValues "target cs_ragdoll"
+  CBaseEntity_KeyValues "magnitude 1"
+  CBaseEntity_KeyValues "dissolvetype 3" (can be disove type 2,1 etc)
+
+  
+  
+  
+  
+  
+  
+  zombie_startmoney 0
+  
+  
+  A suggestion I got, on zombification would it be possible to a cvar that one could set to make the first zombie be teleported back to spawn?...
+  
+  
+  find tk money
+  
+  
+  1250 on zombification to the zombie??
+
+
+max ammo and clip size

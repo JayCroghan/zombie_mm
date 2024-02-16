@@ -1,0 +1,29 @@
+The notify message you added works fine. It says you picked the class you you selected in the menu..but it does not set it to that skin unless you selected it while you were already a zombie and alive.
+
+---
+
+cl_forcepreload
+
+---
+
+can you change zombie_classes_random in away that zmod will automatically select a random class until a player choose one? As soon chosen it should stay for ever unless the players change it (setting it to 3 doesn't do this :/ )
+
+---
+
+http:...net/zombiemod/zombie_classes.php
+
+---
+
+http://www.sourceop.com/modules.php?name=Downloads
+
+---
+
+cold theres a menu bug, when you go !zbuy or !zmenu and press 0 then go to like a admin menu when you click and option there i have to press 9 again and again untill menu's fully closed then open the admin menu again
+
+The menu goes hidden but its actually still there when you open a different menu up.
+
+---
+
+Hi.
+What happend to this:
+in ver. 1.2.8 when you get killed as zombie and spawn as human. then you had xx secs of immortal to find a spot, but you were also 100% Invisible..

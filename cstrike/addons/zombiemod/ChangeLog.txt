@@ -1,0 +1,646 @@
+3.0.1 b
+==========
+- Fixed issue where when players were actually inside each other zstuck wouldn't work - all this time it was checking distance > 0 instead of >= 0 doh >.<
+- Implemented new version of ZM Anti Stick, this will remove players being able to clip through objects yet have the same functionality.
+- Removed all references to sv_cheats from the code - full bright maps won't go dark (",)
+- Added human and admin class functionality.
+
+3.0.1 a
+==========
+- Implemented new and improved Class Manager.
+
+3.0.0 (Public Release)
+==========
+- Fixed variables in config file, the correct variables are zombie_money and zombie_humans_jetpack.
+- Fixed zombie_listclasses output, there was nothing wrong with the classes it's the speed setting that's not working correctly, I think 300 is the max speed.
+
+3.0.0 I
+==========
+- Added short variants of all cvars (zm_)
+- Fixed napalm grenade not igniting itself.
+- Added zombie_napalm_time cvar.
+- Moved maps configs to maps subfolder. (Will still read old ones secondarily for a few versions so be careful and remove the old one when you move inside subfolder.)
+- Fixed issues from the last release.
+- Disabled environmental settings by default.
+- Fixed FFA for linux (Thanks to the CS:S DM team!)
+* If you are having issues with menus in other plugins try setting zombie_game_description 0 in your config file.
+
+3.0.0 H
+==========
+- Fixed linux offset issues.
+- Moved ALL possible offsets and signatures to signatures.kv file so binary updates will become less and less required.
+- Added new cvar zombie_jump_height for use when classes are disabled and also as a default for the class files if it doesn't exist.
+- Added new cvar zombie_game_description for changing the game name in server list. (I may remove these if they are abused.)
+- Added new cvar zombie_game_description_format for formatting the game description. (I may remove these if they are abused.)
+- Removed the requirement to edit modevents.res at all - now it's self incorporated with the addition of zombieevents.res in /addons/zombiemod/
+
+3.0.0 F
+==========
+- Fixed a large corruption issue everytime someone took damage from a weapon, it's been there for quite some time!
+- Fixed fall damage output.
+- Fixed round end overlays appearing when ZM was disabled.
+- Fixed round end types.
+- Fixed zombies not getting team points for round timing out.
+- Made sure zombification event still fires, please make sure your modevents.res is properly configured *after each update*!
+- Changed how Zombie Speed is handled, added run speed and crouch speed to classes and new cvars for disabled classes mode.
+- Changed how autobuy and rebuy are handled.
+- Added cvar to disable sending class informatin to clients zombie_display_class.
+- Added Napalm Grenades (zombie_napalm_enabled, zombie_napalm_radius, zombie_napalm_damage ).
+- Added the ability for clients to enable/disable Zombie Vision completely with client command zombie_vision_enabled 1/0 and option to save this to file zombie_save_visionlist.
+- Added new language entries.
+- Various other fixes and improvements I can't remember now.
+
+
+3.0.0 E
+==========
+- Fixed players never being de-protected (invis players)
+- Fixed various sourcemod plugin interaction crashes.
+- Fixed all reported bugs thus far.
+
+3.0.0 OB A
+==========
+- Made everything work for OrangeBox and MMSource 1.8.
+
+2.0.1 F
+====
+- Fixed some of the weapon stuff not working i.e. zombie nade protection and nade multipliers.
+
+2.0.1 E
+====
+- Fixed Windows servers not working since srcds update.
+- Fixed c4 not being restricted by default.
+
+2.0.1 D
+====
+- Fixed only 1 ammo clip when buying weapons from menu.
+- Now force sv_forcepreload.
+- Fixed classes menu showing 2 for all pages.
+- Added zombie_slay server command.
+- Fixed classes only being chosen on death, now also sets class on spawn.
+- Fixed zombie_classes.php missing from c0ld.net/zombiemod/
+- Fixed menus not disabling - let me know if this works.
+
+2.0.1 C
+====
+- Fixed !zmenu and !zbuy.
+- Changed how buy menu acts when purchasing a weapon, now goes back to main buy menu.
+- Increased round time by 10 seconds.
+- Added new cvar zombie_buymenu_timelimit for limiting buying weapons inside buy time.
+- Added new cvar zombie_buymenu_roundstart for showing buy menu at round start.
+- Re-ordered the config so all cvars are grouped. (Thanks Games!)
+
+
+2.0.1 B
+====
+- Added zombification event to all zombificatins (doh!) -1 if no attacker (first zombie(s)).
+- Added zombie_count_min and zombie_count_max for random amount of first zombies.
+- Added new cvar zombie_class_url for class list HUD.
+- Added new cvar zombie_allow_picked_up_weapons for allowing players to pickup restricted weapons on a map.
+- Added CSSDM style buy menu, supports /map directories.
+- Added new cvar zombie_buymenu and zombie_buymenu_zone_only.
+- Added new cvar zombie_falldamage and added falldamage to classes.
+- Added new cvar zombie_show_attacker_health.
+- Added new cvar zombie_class_url for !zclasses. (check addons/zombiemod/php/zombie_classes.php for information on how the page is created.)
+- Changed !zmenu to display over all menu, !zclasslist for classes and !zbuy for buy menu.
+
+2.0.1 A
+====
+- Fixed zombie show health showing the the attacker your health instead of the zombie.
+- Added zombification event, needs to be added to modevents.res for scripting.
+- Fixed "Invalid player for SetProtection" spam when in spec.
+- Fixed "You're class is now ''" message when classes disabled.
+- Added grenade damage and knockback multipliers and zombification health bonus to classes and classless game.
+- Added new cvars zombie_grenade_damage_multiplier, zombie_grenade_knockback_multiplier, zombie_health_bonus for non class play.
+
+The following needs to be added before the closing } in resource/modevents.res to use the zombification event in other plugins.
+"zombification"
+{
+	"userid"	"short"   	// user ID who was zombified.
+	"attacker"	"short"	 	// user ID who killed.
+	"class"		"short" 	// class ID who zombified.
+}
+
+2.0.0 Z
+====
+- Fixed crash bug with bots.
+- Added zombie_classes_random to config file.
+- Added new option for zombie_classes_random - 3.
+- Added new option for zombie_show_health - 2.
+- New language entry.
+
+2.0.0 Y
+====
+- Added new cvar zombie_classes_random with two settings!
+
+2.0.0 X
+====
+- Added new language input to file change_class_msg.
+- Fixed Classes menu not displaying and added a new client message.
+- Fixed garbage when zombied by a zombie you did no damage to.
+
+2.0.0 W
+====
+- Fixed language file, zspawn_team was missing closing quotes. (This will fix missing languages)
+- Changed loading method to Metamod 1.4 (vdf or metaplugins.ini)
+- Fixed 'too many models' error.
+- Allowed zombie_respawn_onconnect to work without zombie_respawn.
+- Fixed text displayed in console for !zmenu.
+
+
+2.0.0 V
+====
+- Fixed zspawn reporting you are dead incorrectly.
+- Fixed the fact you could use zombie_respawn console command and spawn straight away with respawn_delay > 0.
+
+2.0.0 U
+====
+- Rewrote the way !zspawn is handled. Should now show the correct messages. Also now shows time remaining spawn if delay is > 0 and you type !zspawn again. This should also stop players spawning before round start (invincible player bug).
+- Fixed a potential crash bug around dissolve.
+- A few speed enhancements.
+- Added to language file: autospawn_secs_2nd, autospawn_1stzombie
+
+2.0.0 T
+====
+- Added new cvar zombie_delete_dropped_weapons.
+- Fixed invincible player bug.
+- Fixed all timer related problems - end round forcing, protection, random zombie etc.
+- To help fix zombies not being chosen i've added some logs i'd like sent *if* it happens again.
+- Fixed Zombie Money problems, it was just doubling your money every time it gave any!
+- Added headshots only, regen amount and regen timer to classes.
+- Fixed zombie_restrictions and flashbangs.
+
+TODO:
+- Add grenade damage multiplier to main game & classes.
+- Add per weapon clip sizes and max size.
+
+2.0.0 S
+====
+- Added new cvar zombie_dissolve_corpse_delay.
+- Fixed dissolve crash bug on linux servers.
+- Fixed new respawn bug on linux servers.
+
+2.0.0 R
+====
+- Fixed first respawn tele.
+- Added new cvar zombie_dissolve_corpse.
+- Added new con command kill_round.
+
+2.0.0 Q
+====
+- Fixed same player being zombie when zombie_count was non 0.
+- Added full language support =D !
+- Added headshots to zombie classes default file.
+- Added new cvar zombie_first_zombie_tele.
+- Added new cvar zombie_force_endround.
+- Added new cvar zombie_language_file.
+- Added new cvar zombie_language_error.
+- Added complete money control for server admins.
+- Added new cvar zombie_startmoney.
+- Added new cvar zombie_tk_money.
+- Added new cvar zombie_kill_money.
+- Added new cvar zombie_zombie_money.
+- Removed 1250 given to zombies when they were zombied.
+
+2.0.0 P
+====
+- Added functionality to prevent the same player from being first zombie two rounds in a row.
+- Fixed !zplayer output.
+- Added new cvar zombie_weapon.
+- Added new cvar zombie_disconnect_protection.
+
+
+2.0.0 O
+====
+- Fixed alive players being able to !zspawn when zombie_respawn_delay was non 0.
+- Added new cvar zombie_respawn_dontdrop_indexes to ignore certain indexes.
+- Added new cvar zombie_respawn_dropweapons.
+
+2.0.0 N
+=====
+- Fixed !zspawn not working when player is spec.
+- Added !zplayer information messages for relay back to forums when players are invincible for too long.
+- Added !zstart to kick start a game if no more zombies spawn.
+- Added new cvar zombie_vote_interval, global vote interval time in seconds between voting.
+- Added new cvar zombie_kickstart_percent.
+- Added new cvar zombie_kickstart_timer.
+
+2.0.0 M
+=====
+- Fixed welcome message not displaying new line character.
+- Fixed zombie_respawn_secondary.
+- Fixed headshots variable in class list being displayed wrong in the client console.
+- Fixed !zspawn working even when disabled.
+
+2.0.0 L
+=====
+- Fixed linux binaries not being the latest.
+
+2.0.0 K
+=====
+- Fixed another possible crash bug.
+- Fixed round end overlays sticking if zombie vision was disabled.
+- Added some proper error messages to !ztele.
+
+2.0.0 J
+=====
+- Fixed class menu showing up when no classes loaded.
+- Fixed new crash bug.
+
+2.0.0 I
+=====
+- Fixed class menu so damage menu doesn't show up if it's open.
+- Fixed crash bug after protection timer runs out.
+- Fixed zombies getting protection and weapons.
+- Added zombie_respawn_onconnect_as_zombie to the cfg file.
+
+2.0.0 H
+=====
+- Added new zombie_dark mode, set it to 2 for a little lighter than regular.
+- Added "headshots" variable to zombie classes to over-ride zombie_headshot_count when zombie_classes are enabled.
+- Fixed !zhelp again, now shows a help specificically for your servers setup.
+- Fixed sv_cheats bug.
+- Fixed crash bug on linux.
+- Fixed round_end overlays not working if all zombies were killed.
+- Removed [CSSMC] branding from welcome text cvar.
+- Disabled !zspawn when zombie_respawn_delay is enabled except for first usage if zombie_respawn_onconnect is enabled.
+
+2.0.0 G
+=====
+- Fixed zombie class variables being incorrect.
+- Fixed respawning in new round if zombie_respawn_delay was high and you died near the end of a round.
+- Fixed end round overlays remaining on during the round.
+- Fixed !zhelp.
+- Fixed zombie_respawn_onconnect_as_zombie.
+- Fixed comments and white space in models.cfg and downloads.cfg
+- Fixed zombie_class_menu showing up again after a selection.
+- Fixed invisibility at round start.
+- Now gives max ammo for respawn weapons.
+- Now shows class menu to new clients the first time they're zombified.
+- Both !zstuck and !ztele now available. (zstuck is the old method and ztele is the new method)
+- New !zmenu command for zombie_class_menu.
+- New cvar zombie_count, amount of zombies to spawn per round.
+- New cvar zombie_count_doublehp to define the way double hp is used at round_start.
+- New cvar zombie_zstuck_enabled.
+- Removed zombie_clrestrict_motd
+- Removed zombie_clrestrict_string
+
+2.0.0 F
+=====
+- Fixed incorrect health bug. It always displayed the health before the last attack.
+- Fixed classes menu, now supports > 9 classes.
+- Fixed zombie_first_zombie cvar max value was 65.
+- Fixed jetpack remaining enabled after the time out expires.
+- Added new cvar zombie_respawn_onconnect_as_zombie.
+
+2.0.0 E
+=====
+- Fixed crash bug with zombie_class_menu on linux servers.
+- Fixed bug where first zombie got double their double health if classes are disabled.
+- Fixed spelling of Zombie Protection :)
+
+
+2.0.0 D
+=====
+- Now only works with new CS:S Beta
+- Enabled zombie overlay.
+- Added new zombie end round overlays.
+- Fixed zombie_damagelist_time not working.
+- Fixed FOV sticking on new round.
+- Fixed players staying invisible for the round.
+- Readded the corpse model.
+- Moved all downloads to downloads cfg.
+- Players can now disable zombie vision by binding a key to zombie_vision and night vision is also provided at zombification.
+- Added new method for displaying zombie health, requires clients to modify a file in cstrike folder.
+- Added new cvar zombie_vision_material.
+- Added new cvar zombie_classes. Look at zombie_classes.cfg for more information.
+- Added new cvar zombie_save_classlist, saves players class selections to file.
+- Added new cvar zombie_health_percent for use with zombie classes.
+- Added new cvar zombie_speed_percent for use with zombie classes.
+- Added new cvar zombie_jump_height_percent for use with zombie classes.
+- Added new cvar zombie_knockback_percent for use with zombie classes.
+- Added new cvar zombie_respawn_primary.
+- Added new cvar zombie_respawn_secondary.
+- Added new cvar zombie_respawn_grenades.
+- Added new convar zombie_clear_classlist, clears list of saved players' class selections.
+- Added new convar zombie_class_count, displays current amount of saved players' class selections.
+- Added new convar zombie_writeclasses, writes current list of player class selections to file.
+
+
+2.0.0 C
+=====
+- Removed overlay for now.
+- Removed cl_restrict enforcer.
+- Re-enabled zombie_allow_disable_nv
+- Fixed on zombification cl_restrict restricting use slot3.
+- Fixed players staying invisible for the round.
+- Added zombie_teleport_zombies_only, if enabled zombies are the only ones allowed to use !zstuck. Allows humans to use it until first guy is chosen.
+- Added zombie_first_zombie cvar to show who's first zombie.
+- Added zombie_show_health, shows you your health each time you zombify someone.
+- Added zombie_regen_timer
+- Added zombie_regen_health
+- Added zombie_damagelist_time, time to display damage list.
+
+2.0.0 Alpha
+=====
+- Changed !zstuck behaviour, now teleports to a random spawn point.
+- Changed Zombie Vision, now has a cool texture and colour. Can't be disabled.
+- Added new cvar zombie_vision_r.
+- Added new cvar zombie_vision_g.
+- Added new cvar zombie_vision_b.
+- Added new cvar zombie_vision_a.
+- Added new cvar zombie_vision_timer, time between zombie vision enforcement.
+- Added new cvar zombie_respawn_protection. Invisible time for players when they respawn. Also cannot be zombified.
+- Added new cvar zombie_respawn_as_zombie.
+- Added new cvar zombie_respawn_onconnect. Allows one respawn when a player connects incase the round has started.
+- Added new cvar zombie_teleportcount. Amount of times someone is allowed to use zstuck in a round.
+- Added new cvar zombie_damagelist. When enabled shows a list of zombie victims and the health your successfull attacker has left.
+- Added MOTD window on first spawn to tell players ZM will disable their cl_restrict_server_commands. zombie_clrestrict_motd and zombie_clrestrict_string.
+- Fixed bug where if you tried to buy anything you could see other team on the radar. Also allows players to buy when they respawn.
+- Fixed bug with the .cfg file, replaced all tabs with spaces.
+
+TODO: Zombie Classes, Zombie Tourney setup.
+
+1.2.5
+=====
+- Fixed windows binary to work with the latest srcds update.
+- Removed zombie_respawn command for now.
+- Removed slapme test command.
+
+1.2.4
+=====
+- Fixed windows binary to work after last srcds update.
+- Fixed ent_fire exploit.
+
+1.2.3
+=====
+- Minor fix for windows to compensate for steam update 30/08/06
+
+1.2.2
+=====
+- Fixed jetpack not working.
+- Fixed where, on zombification, the human got the extra frag instead of the attacking Zombie.
+
+1.2.1
+=====
+- Fixed knockback not working.
+
+1.2.0
+=====
+- Alot of fixes to compensate for the new CS:S update.
+
+1.1.5
+=====
+- Fixed bug introduced in v1.1.4 where the first connected player could use weapons as a zombie.
+
+1.1.4
+=====
+- Added round timer checking.
+- Fixed crash bug when a player left shortly after round_start.
+- Fixed zombie_stuckcheck_radius not being checked for !zstuck.
+
+1.1.3
+======
+- Fixed first Zombies health not being correctly set.
+- Fixed crash bug during Zombification if player disconnects at the wrong time.
+
+1.1.2
+======
+- Fixed crash bug introduced with 1.1.1
+
+1.1.1
+======
+- Added proper support for mp_restartgame.
+- Added an improved method of preventing and un-sticking players.
+- Removed all redundant code blocks.
+- Fixed perfomance decrease which came with 1.1.0.
+- Fixed per map configs being executed too late.
+
+1.1.0
+======
+- Added new cvar zombie_headshots_only.
+- Added new cvar zombie_balancer_health_ratio.
+- Added new cvar zombie_balancer_player_ratio.
+- Added new cvar zombie_balancer_type.
+- Added new cvar zombie_balancer_min_health.
+- Changed zombie_help_text to include the website address.
+- Fixed rare crash bug. (Pure Virtual Function Call)
+
+1.0.2
+======
+- Fixed crashing on zombie_mode 0 on some linux machines.
+- Fixed zombie_talk enforcing when zombie_enabled was 0.
+
+1.0.1
+======
+- Fixed crashing on map change.
+
+1.0.0
+=======
+- Fixed cl_mindmodels not being forced.
+- Fixed zombie_fog_sky being forced wether 1 or 0.
+- Added new cvar zombie_undead_sound.
+- Added new cvar zombie_undead_sound_enabled.
+- Added new cvar zombie_undead_sound_volume.
+- Added new cvar zombie_undead_sound_exclusions.
+- Removed most of the redundant logging.
+- Changed the rest of the redundant logging to echo to console instead.
+- Changed default value of zombie_fog_colour.
+- Changed default value of zombie_fog_colour2.
+- Changed default value of zombie_fog_start.
+- Changed default value of zombie_fog_blend.
+
+0.9.8 b
+=======
+- Fixed ConsGreet.
+
+0.9.8 a
+=======
+- Renamed zombie_max_ammo cvar to zombie_unlimited_ammo.
+- Added cfg/zombiemod/zombiemod.cfg executed at Load and LevelInit.
+- Added map config files, which may be used to set zombie specific cvars for maps.
+- Added new cvar zombie_welcome_delay.
+- Added new cvar zombie_welcome_text.
+- Added new cvar zombie_help_url.
+
+0.9.7 z
+=======
+- Added improved player location functionality.
+- Fixed FFA for linux servers.
+- Added mp_friendlyfire forced to 0 on linux (Already forced on Windows).
+
+0.9.7 y
+=======
+- Fixed scream spamming invalid command in console.
+- Changed zombies command to zombie_enabled 1/0.
+- Changed a compiler option which fixes a rare crash bug.
+
+0.9.7 x
+=======
+- Added new cvar zombie_stuckcheck_radius. (See Installation)
+- Changed default value of zombie_stuckcheck_radius to 30.
+- Fixed rare crash bug on round_start.
+
+0.9.7 w
+=======
+- Changed how !zstuck works. Now moves players location instead of slapping.
+
+0.9.7 v
+=======
+- Fixed crash bug on custom maps with sky/fog.
+- Fixed a crash bug with !zstuck.
+- Increased !zstuck slapping power.
+- TODO: Preventing people sticking in the first place is the next thing on my list.
+
+0.9.7 u
+=======
+- Fixed players spawning without pistol after being a zombie.
+- Fixed FOV not working 75% of the time.
+- Fixed hostages being killed on rounds where there are no players.
+- Fixed players not spawning at round_start.
+- Added player chat command '!zstuck'. (See Installation.txt)
+- Added blood emitence when zombies loose their head.
+- Added deaths incrementation for victims of zombifications.
+
+0.9.7 t
+=======
+- Fixed crash bug on LevelInit with zombie_dark.
+
+0.9.7 s
+=======
+- Fixed zombie_fog settings crashing the server on maps with no sky_camera.
+
+0.9.7 r
+=======
+- Processor usage greatly decreased in all recursive functions.
+- Fixed zombie_fog and zombie_fog sky to completely integrate with maps.
+- Removed large sky material.
+- Added new small sky materials.
+- Added new cvar zombie_fog_sky_material for sky customization.
+- Fixed all the problems Windows users had after the update.
+- Changed all signatures to use wildcards based on 13/04/06 update.
+- Now force cl_minmodels 0.
+- Reduced LevelInit time when zombie_fog and zombie_fog_sky are enabled from 5 seconds to < 1.
+
+
+NOTE: For people using zombie_teams, buy time is reduced to then the first zombie is chosen, once that happens players get switched teams !
+
+0.9.7 q
+=======
+- Fixed jetpacks stayin on after zombification when zombie_jetpack disabled.
+- Fixed no zombie being chosen when zombies is enabled after round_start.
+- Fixed possible bug where jetpacks stayed on after round_end.
+- JetPack now doesn't work untill after the first zombie has been chosen.
+
+0.9.7 p
+=======
+- Fixed zomie_max_ammo not disabling with Zombie command.
+
+0.9.7 o
+=======
+- Added new cvar humans_jetpack. (See Installation.txt)
+- Performance increases in some of the tigher spots.
+
+0.9.7 n
+=======
+- Added new cvar zombie_jetpack. (See Installation.txt)
+- Added new cvar zombie_jetpack_timer. (See Installation.txt)
+- Added new player command '+jetpack'. (See Installation.txt)
+
+0.9.7 m
+=======
+- Attempted to fix zombie_max_ammo problems.
+
+0.9.7 l
+=======
+- Fixed missing sky texture.
+- Fixed zombie_max_ammo always starting disabled.
+- Added missing sky texture.
+
+0.9.7 k
+=======
+- Fixed problem with late loading and zombie_startup.
+- Fixed the Installation.txt having corrupt cvar templates for zombie_model_file and zombie_download_file.
+- Fixed "Model not precached" error when no models are loaded.
+- Added new cvar zombie_notification. (See Installation.txt)
+- Added new cvar zombie_effect. (See Installation.txt)
+- Added new cvar zombie_shake. (See Installation.txt)
+- Added new cvar zombie_notices. (See Installation.txt)
+- Added new cvar zombie_fog. (See Installation.txt)
+- Added new cvar zombie_fog_sky. (See Installation.txt)
+- Added new cvar zombie_fog_colour. (See Installation.txt)
+- Added new cvar zombie_fog_colour2. (See Installation.txt)
+- Added new cvar zombie_fog_start. (See Installation.txt)
+- Added new cvar zombie_fog_end. (See Installation.txt)
+- Added new cvar zombie_fog_blend. (See Installation.txt)
+- Added player chat command '!zhelp'. (See Installation.txt)
+
+0.9.7 j
+=======
+- Fixed zombie_teams and buy zones not working. Check it out !
+- Fixed FOV not working sometimes.
+- Fixed people getting stuck together sometimes. Let me know if this happens again !
+- Fixed weird dark textures.
+- Added new cvar zombie_headshot_count. (See Installation.txt)
+- Added new cvar zombie_kill_bonus. (See Installation.txt)
+- Added new cvar zombie_allow_disable_nv. (See Installation.txt)
+
+0.9.7 i
+=======
+- Forced mp_friendlyfire to 1 on linux servers untill a bug is fixed.
+
+0.9.7 h
+=======
+- Added new models from ZombieHorde complete with removable heads.
+- Added new cvar zombie_headshots. (See Installation.txt)
+- Added new cvar zombie_changeteam_block. (See Installation.txt)
+- Added forcing value for mp_limitteams and mp_autoteambalance when zombie_teams is enabled.
+- Added player command 'zombie_respawn' for respawning when dead.
+- Added player command 'scream' to emit sounds as a zombie.
+
+0.9.7 g
+=======
+- Removed ability to manually change zombie_mode cvar.
+- Updated the Installation.txt file to show new cvar information.
+- General improvements all around.
+
+0.9.7 f
+=======
+- Fixed Zombie health not being set.
+- Fixed zombie_restrictions not changing untill new map.
+- Added zombie_timer_max and zombie_timer_min for first random zombie.
+
+0.9.7 e
+=======
+- Fixed a ridiculous error on my behalf causing all hooks to be disabled on Windows.
+
+0.9.7 d
+=======
+- Added CVar zombie_startup, if 1 on first ever round_start auto enables.
+- Attemted to fix FFA rioting.
+- Fixed looped round restarting with zombie_teams enabled.
+
+0.9.7 c
+=======
+- Fixed zombie_teams crashing the server. (Still not 100%)
+- Fixed zombies being able to pickup weapons. (Between rounds doesnt count)
+- Lots more =)
+
+0.9.7 B
+=======
+- Fixed zombie_speed cvar, please take note.
+- Fixed god mode when zombie mode is off.
+- Attempted to fix FFA riots.
+- Attempted to fix weapon pickups.
+
+0.9.6 B
+=======
+- Fixed Zombies being able to switch to grenades.
+- Fixed zombie_suicide being enabled when zombie mode is off.
+- Fixed FOV sometimes not getting set on Zombification.
+- Fixed FOV sometimes not reseting to normal on death and round reset.
+- Fixed server crash when plugin is unloaded (Still not a really good idea).
+- Fixed rotation on the stock Fast, Poison and Classic models.
+- Fixed 'Free For All' always being enabled. (TK not reporting)
+
+'Free For All' is when you hurt a team mate, it doesnt report it, and it does 100% damage.
+Thanks to BAILOPAN for the help.

@@ -1,0 +1,5 @@
+"Metamod Plugin"
+{
+	"alias"		"ZombieMod"
+	"file"		"addons/zombiemod/bin/zombie_mm"
+}

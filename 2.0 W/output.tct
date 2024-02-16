@@ -1,0 +1,120 @@
+Reading specs from /opt/crosstool/gcc-3.4.1-glibc-2.3.2/i686-unknown-linux-gnu/lib/gcc/i686-unknown-linux-gnu/3.4.1/specs
+Configured with: /opt/crosstool-0.37/build/i686-unknown-linux-gnu/gcc-3.4.1-glibc-2.3.2/gcc-3.4.1/configure --target=i686-unknown-linux-gnu --host=i686-host_pc-cygwin --prefix=/opt/crosstool/gcc-3.4.1-glibc-2.3.2/i686-unknown-linux-gnu --with-headers=/opt/crosstool/gcc-3.4.1-glibc-2.3.2/i686-unknown-linux-gnu/i686-unknown-linux-gnu/include --with-local-prefix=/opt/crosstool/gcc-3.4.1-glibc-2.3.2/i686-unknown-linux-gnu/i686-unknown-linux-gnu --disable-nls --enable-threads=posix --enable-symvers=gnu --enable-__cxa_atexit --enable-languages=c,c++ --enable-shared --enable-c99 --enable-long-long
+Thread model: posix
+gcc version 3.4.1
+ /opt/crosstool/gcc-3.4.1-glibc-2.3.2/i686-unknown-linux-gnu/libexec/gcc/i686-unknown-linux-gnu/3.4.1/cc1plus.exe -quiet -v -I. -I/cygdrive/e/coding/c/hl2sdk/cstrike/public -I/cygdrive/e/coding/c/hl2sdk/cstrike/public/dlls -I/cygdrive/e/coding/c/hl2sdk/cstrike/public/engine -I/cygdrive/e/coding/c/hl2sdk/cstrike/public/tier0 -I/cygdrive/e/coding/c/hl2sdk/cstrike/public/tier1 -I/cygdrive/e/coding/c/hl2sdk/cstrike/public/vstdlib -I/cygdrive/e/coding/c/hl2sdk/cstrike/tier1 -I/cygdrive/e/coding/c/hl2sdk/cstrike/game_shared -I/cygdrive/e/coding/c/hl2sdk/cstrike/dlls -I/cygdrive/e/coding/c/sourcemm -I/cygdrive/e/coding/c/sourcemm/sourcehook -I/cygdrive/e/coding/c/sourcemm/sourcemm -D_GNU_SOURCE -D_LINUX -DNDEBUG -Dstricmp=strcasecmp -D_stricmp=strcasecmp -D_strnicmp=strncasecmp -Dstrnicmp=strncasecmp -D_snprintf=snprintf -D_vsnprintf=vsnprintf -D_alloca=alloca -Dstrcmpi=strcasecmp ZombiePlugin.cpp -quiet -dumpbase ZombiePlugin.cpp -mtune=pentiumpro -auxbase-strip Release/ZombiePlugin.o -O3 -Wno-deprecated -version -fno-rtti -funroll-loops -fpermissive -fPIC -o - |
+ /opt/crosstool/gcc-3.4.1-glibc-2.3.2/i686-unknown-linux-gnu/lib/gcc/i686-unknown-linux-gnu/3.4.1/../../../../i686-unknown-linux-gnu/bin/as.exe -V -Qy -o Release/ZombiePlugin.o -
+#include "..." search starts here:
+#include <...> search starts here:
+ .
+ /cygdrive/e/coding/c/hl2sdk/cstrike/public
+ /cygdrive/e/coding/c/hl2sdk/cstrike/public/dlls
+ /cygdrive/e/coding/c/hl2sdk/cstrike/public/engine
+ /cygdrive/e/coding/c/hl2sdk/cstrike/public/tier0
+ /cygdrive/e/coding/c/hl2sdk/cstrike/public/tier1
+ /cygdrive/e/coding/c/hl2sdk/cstrike/public/vstdlib
+ /cygdrive/e/coding/c/hl2sdk/cstrike/tier1
+ /cygdrive/e/coding/c/hl2sdk/cstrike/game_shared
+ /cygdrive/e/coding/c/hl2sdk/cstrike/dlls
+ /cygdrive/e/coding/c/sourcemm
+ /cygdrive/e/coding/c/sourcemm/sourcehook
+ /cygdrive/e/coding/c/sourcemm/sourcemm
+ /opt/crosstool/gcc-3.4.1-glibc-2.3.2/i686-unknown-linux-gnu/lib/gcc/i686-unknown-linux-gnu/3.4.1/../../../../include/c++/3.4.1
+ /opt/crosstool/gcc-3.4.1-glibc-2.3.2/i686-unknown-linux-gnu/lib/gcc/i686-unknown-linux-gnu/3.4.1/../../../../include/c++/3.4.1/i686-unknown-linux-gnu
+ /opt/crosstool/gcc-3.4.1-glibc-2.3.2/i686-unknown-linux-gnu/lib/gcc/i686-unknown-linux-gnu/3.4.1/../../../../include/c++/3.4.1/backward
+ /opt/crosstool/gcc-3.4.1-glibc-2.3.2/i686-unknown-linux-gnu/lib/gcc/i686-unknown-linux-gnu/3.4.1/include
+ /opt/crosstool/gcc-3.4.1-glibc-2.3.2/i686-unknown-linux-gnu/lib/gcc/i686-unknown-linux-gnu/3.4.1/../../../../i686-unknown-linux-gnu/sys-include
+ /opt/crosstool/gcc-3.4.1-glibc-2.3.2/i686-unknown-linux-gnu/lib/gcc/i686-unknown-linux-gnu/3.4.1/../../../../i686-unknown-linux-gnu/include
+End of search list.
+GNU C++ version 3.4.1 (i686-unknown-linux-gnu)
+	compiled by GNU C version 3.4.4 (cygming special) (gdc 0.12, using dmd 0.125).
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+GNU assembler version 2.15 (i686-unknown-linux-gnu) using BFD version 2.15
+In file included from /cygdrive/e/coding/c/hl2sdk/cstrike/public/tier0/platform.h:13,
+                 from /cygdrive/e/coding/c/hl2sdk/cstrike/public/tier1/interface.h:41,
+                 from /cygdrive/e/coding/c/sourcemm/sourcemm/ISmmPlugin.h:19,
+                 from ZombiePlugin.h:14,
+                 from ZombiePlugin.cpp:12:
+/cygdrive/e/coding/c/hl2sdk/cstrike/public/tier0/wchartypes.h:24: warning: redeclaration of C++ built-in type `short'
+In file included from /cygdrive/e/coding/c/hl2sdk/cstrike/public/tier1/interface.h:41,
+                 from /cygdrive/e/coding/c/sourcemm/sourcemm/ISmmPlugin.h:19,
+                 from ZombiePlugin.h:14,
+                 from ZombiePlugin.cpp:12:
+/cygdrive/e/coding/c/hl2sdk/cstrike/public/tier0/platform.h:422:1: warning: "LITTLE_ENDIAN" redefined
+In file included from /opt/crosstool/gcc-3.4.1-glibc-2.3.2/i686-unknown-linux-gnu/lib/gcc/i686-unknown-linux-gnu/3.4.1/../../../../i686-unknown-linux-gnu/sys-include/sys/types.h:213,
+                 from ./oslink.h:34,
+                 from ZombiePlugin.cpp:11:
+/opt/crosstool/gcc-3.4.1-glibc-2.3.2/i686-unknown-linux-gnu/lib/gcc/i686-unknown-linux-gnu/3.4.1/../../../../i686-unknown-linux-gnu/sys-include/endian.h:46:1: warning: this is the location of the previous definition
+In file included from /cygdrive/e/coding/c/hl2sdk/cstrike/public/tier0/platform.h:602,
+                 from /cygdrive/e/coding/c/hl2sdk/cstrike/public/tier1/interface.h:41,
+                 from /cygdrive/e/coding/c/sourcemm/sourcemm/ISmmPlugin.h:19,
+                 from ZombiePlugin.h:14,
+                 from ZombiePlugin.cpp:12:
+/cygdrive/e/coding/c/hl2sdk/cstrike/public/tier0/fasttimer.h: In member function `void CCycleCount::Init(float)':
+/cygdrive/e/coding/c/hl2sdk/cstrike/public/tier0/fasttimer.h:256: warning: converting to `int64' from `double'
+In file included from /cygdrive/e/coding/c/hl2sdk/cstrike/public/tier0/basetypes.h:11,
+                 from /cygdrive/e/coding/c/hl2sdk/cstrike/public/tier0/dbg.h:17,
+                 from /cygdrive/e/coding/c/hl2sdk/cstrike/public/tier1/convar.h:18,
+                 from /cygdrive/e/coding/c/hl2sdk/cstrike/public/eiface.h:16,
+                 from /cygdrive/e/coding/c/sourcemm/sourcemm/ISmmAPI.h:20,
+                 from /cygdrive/e/coding/c/sourcemm/sourcemm/ISmmPlugin.h:21,
+                 from ZombiePlugin.h:14,
+                 from ZombiePlugin.cpp:12:
+/cygdrive/e/coding/c/hl2sdk/cstrike/public/tier0/commonmacros.h:40:26: warning: no newline at end of file
+In file included from /cygdrive/e/coding/c/hl2sdk/cstrike/public/cmodel.h:16,
+                 from /cygdrive/e/coding/c/hl2sdk/cstrike/public/edict.h:15,
+                 from /cygdrive/e/coding/c/hl2sdk/cstrike/public/eiface.h:18,
+                 from /cygdrive/e/coding/c/sourcemm/sourcemm/ISmmAPI.h:20,
+                 from /cygdrive/e/coding/c/sourcemm/sourcemm/ISmmPlugin.h:21,
+                 from ZombiePlugin.h:14,
+                 from ZombiePlugin.cpp:12:
+/cygdrive/e/coding/c/hl2sdk/cstrike/public/trace.h:69:18: warning: no newline at end of file
+In file included from /cygdrive/e/coding/c/hl2sdk/cstrike/public/tier1/utlmemory.h:32,
+                 from /cygdrive/e/coding/c/hl2sdk/cstrike/public/tier1/utlvector.h:20,
+                 from /cygdrive/e/coding/c/hl2sdk/cstrike/public/gametrace.h:15,
+                 from /cygdrive/e/coding/c/hl2sdk/cstrike/public/cmodel.h:110,
+                 from /cygdrive/e/coding/c/hl2sdk/cstrike/public/edict.h:15,
+                 from /cygdrive/e/coding/c/hl2sdk/cstrike/public/eiface.h:18,
+                 from /cygdrive/e/coding/c/sourcemm/sourcemm/ISmmAPI.h:20,
+                 from /cygdrive/e/coding/c/sourcemm/sourcemm/ISmmPlugin.h:21,
+                 from ZombiePlugin.h:14,
+                 from ZombiePlugin.cpp:12:
+/cygdrive/e/coding/c/hl2sdk/cstrike/public/tier0/memalloc.h:136:8: warning: extra tokens at end of #endif directive
+In file included from /cygdrive/e/coding/c/hl2sdk/cstrike/public/tier1/utlmemory.h:33,
+                 from /cygdrive/e/coding/c/hl2sdk/cstrike/public/tier1/utlvector.h:20,
+                 from /cygdrive/e/coding/c/hl2sdk/cstrike/public/gametrace.h:15,
+                 from /cygdrive/e/coding/c/hl2sdk/cstrike/public/cmodel.h:110,
+                 from /cygdrive/e/coding/c/hl2sdk/cstrike/public/edict.h:15,
+                 from /cygdrive/e/coding/c/hl2sdk/cstrike/public/eiface.h:18,
+                 from /cygdrive/e/coding/c/sourcemm/sourcemm/ISmmAPI.h:20,
+                 from /cygdrive/e/coding/c/sourcemm/sourcemm/ISmmPlugin.h:21,
+                 from ZombiePlugin.h:14,
+                 from ZombiePlugin.cpp:12:
+/cygdrive/e/coding/c/hl2sdk/cstrike/public/tier0/memdbgon.h:113:40: warning: no newline at end of file
+In file included from /cygdrive/e/coding/c/hl2sdk/cstrike/public/tier1/utlvector.h:20,
+                 from /cygdrive/e/coding/c/hl2sdk/cstrike/public/gametrace.h:15,
+                 from /cygdrive/e/coding/c/hl2sdk/cstrike/public/cmodel.h:110,
+                 from /cygdrive/e/coding/c/hl2sdk/cstrike/public/edict.h:15,
+                 from /cygdrive/e/coding/c/hl2sdk/cstrike/public/eiface.h:18,
+                 from /cygdrive/e/coding/c/sourcemm/sourcemm/ISmmAPI.h:20,
+                 from /cygdrive/e/coding/c/sourcemm/sourcemm/ISmmPlugin.h:21,
+                 from ZombiePlugin.h:14,
+                 from ZombiePlugin.cpp:12:
+/cygdrive/e/coding/c/hl2sdk/cstrike/public/tier1/utlmemory.h: In member function `void CUtlMemoryAligned<T, nAlignment>::Grow(int)':
+/cygdrive/e/coding/c/hl2sdk/cstrike/public/tier1/utlmemory.h:498: warning: there are no arguments to `IsExternallyAllocated' that depend on a template parameter, so a declaration of `IsExternallyAllocated' must be available
+/cygdrive/e/coding/c/hl2sdk/cstrike/public/tier1/utlmemory.h: In member function `void CUtlMemoryAligned<T, nAlignment>::EnsureCapacity(int)':
+/cygdrive/e/coding/c/hl2sdk/cstrike/public/tier1/utlmemory.h:554: warning: there are no arguments to `IsExternallyAllocated' that depend on a template parameter, so a declaration of `IsExternallyAllocated' must be available
+/cygdrive/e/coding/c/hl2sdk/cstrike/public/tier1/utlmemory.h: In member function `void CUtlMemoryAligned<T, nAlignment>::Purge()':
+/cygdrive/e/coding/c/hl2sdk/cstrike/public/tier1/utlmemory.h:582: warning: there are no arguments to `IsExternallyAllocated' that depend on a template parameter, so a declaration of `IsExternallyAllocated' must be available
+In file included from /cygdrive/e/coding/c/hl2sdk/cstrike/public/eiface.h:22,
+                 from /cygdrive/e/coding/c/sourcemm/sourcemm/ISmmAPI.h:20,
+                 from /cygdrive/e/coding/c/sourcemm/sourcemm/ISmmPlugin.h:21,
+                 from ZombiePlugin.h:14,
+                 from ZombiePlugin.cpp:12:
+/cygdrive/e/coding/c/hl2sdk/cstrike/public/engine/ivmodelinfo.h:107:24: warning: no newline at end of file
+In file included from ZombiePlugin.h:16,
+                 from ZombiePlugin.cpp:12:
+/cygdrive/e/coding/c/hl2sdk/cstrike/public/igameevents.h:194:24: warning: no newline at end of file
+make[1]: *** Deleting file `Release/ZombiePlugin.o'
+make[1]: *** [Release/ZombiePlugin.o] Interrupt
+make: *** [all] Interrupt

@@ -1,0 +1,35 @@
+"Refract"
+{
+	"Refract_DX60"
+	{
+		"$fallbackmaterial" "vgui/hud/zombiemod/zombie_vision_dx6"
+	}
+
+ 	"$model" 1
+ 	"$refractamount" "0.03"
+ 	"$bluramount" "0"
+	"$REFRACTTINT" "{255 215 215}"
+	"$REFRACTTINTtexture" "vgui/hud/zombiemod/zombie_vision"
+	"$scale" "[1 1]"
+	"$dudvmap" "dev/water_dudv"
+ 	"$normalmap" "dev/water_normal"
+	"$dudvframe" "0"
+	"$bumpframe" "0"
+
+"Proxies"
+	{
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$dudvmap"
+			"animatedtextureframenumvar" "$dudvframe"
+			"animatedtextureframerate" 30.00
+		}
+
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$normalmap"
+			"animatedtextureframenumvar" "$bumpframe"
+			"animatedtextureframerate" 30.00
+		}	
+	}
+}

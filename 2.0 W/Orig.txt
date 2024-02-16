@@ -1,0 +1,85 @@
+const char *sFog = 
+						"{\n" \
+							"\"origin\" \"168 584 136\"\n" \
+							"\"angles\" \"0 0 0\"\n" \
+							"\"farz\" \"3600\"\n" \
+							"\"fogend\" \"%f\"\n" \
+							"\"fogstart\" \"%f\"\n" \
+							"\"fogdir\" \"1 0 0\"\n" \
+							"\"fogcolor\" \"%s\"\n" \
+							"\"fogcolor2\" \"%s\"\n" \
+							"\"fogblend\" \"%d\"\n" \
+							"\"fogenable\" \"1\"\n" \
+							"\"maxdxlevel\" \"0\"\n" \
+							"\"mindxlevel\" \"0\"\n" \
+							"\"classname\" \"env_fog_controller\"\n" \
+						"}\n";
+	const char *sCamera =
+						"{\n" \
+							"\"origin\" \"0 0 2000\"\n" \
+							"\"angles\" \"0 0 0\"\n" \
+							"\"fogenable\" \"1\"\n" \
+							"\"fogend\" \"%f\"\n" \
+							"\"fogstart\" \"%f\"\n" \
+							"\"fogdir\" \"1 0 0\"\n" \
+							"\"fogcolor\" \"%s\"\n" \
+							"\"fogcolor2\" \"%s\"\n" \
+							"\"scale\" \"4\"\n" \
+							"\"classname\" \"sky_camera\"\n" \
+						"}\n";
+	g_MapEntities.clear();
+	char sFogString[1024];
+	char sCamString[1024];
+	Q_snprintf( sFogString, 1024, sFog, zombie_fog_end.GetFloat(), zombie_fog_start.GetFloat(), zombie_fog_colour.GetString(), zombie_fog_colour2.GetString(), zombie_fog_blend.GetInt() );
+	Q_snprintf( sCamString, 1024, sCamera, zombie_fog_end.GetFloat(), zombie_fog_start.GetFloat(), zombie_fog_colour.GetString(), zombie_fog_colour2.GetString() );
+
+	int iOff = 0;
+	const char *sEntities = ents;
+	myString sOrig;
+	sOrig.assign( sEntities );
+	int iLen = Q_strlen( sEntities ) ;
+	int iLen2 = iLen;
+	myString sFinal;
+	char *iPos1 = Q_strstr( sEntities, "env_fog_controller" );
+	if ( iPos1 )
+	{
+		int iStart = Str_rChr( sEntities, '{',  iPos1 - sEntities );
+		int iEnd = Str_Chr( sEntities, '}', iLen, iPos1 - sEntities );
+		sFinal.assign( sOrig.substr( 0, iStart ).c_str() );
+		sFinal.append( sOrig.substr( iEnd + 1, iLen - iEnd -1 ).c_str() );
+	}
+	else
+	{
+		sFinal.assign( sEntities );
+	}
+	iLen = sFinal.size();
+	if ( zombie_fog_sky.GetBool() )
+	{
+		/*sEntities = sFinal.c_str();
+		sOrig.assign( sEntities );
+		iPos1 = Q_strstr( sEntities, "\"sky_camera\"" );
+		if ( iPos1 )
+		{
+			int iStart = Str_rChr( sEntities, '{',  iPos1 - sEntities );
+			int iEnd = Str_Chr( sEntities, '}', iLen, iPos1 - sEntities );
+			sFinal.assign( sOrig.substr( 0, iStart ).c_str() );
+			sFinal.append( sOrig.substr( iEnd + 1, iLen - iEnd -1 ).c_str() );
+		}*/
+
+		sEntities = sFinal.c_str();
+		sOrig.assign( sEntities );
+		iPos1 = Q_strstr( sEntities, "\"skyname\"" );
+		if ( iPos1 )
+		{
+			int iStart = (int)(iPos1 - sEntities);
+			int iEnd = Str_Chr( sEntities, '"', iLen, ( iPos1 - sEntities + 12 ) );
+			sFinal.assign( sOrig.substr( 0, iStart + 11 ) );
+			sFinal.append( "zombie_sky\"" );
+			//sFinal.append( "italy\"" );
+			sFinal.append( sOrig.substr( iEnd + 1, iLen - iEnd -1 ).c_str() );
+		}
+		sFinal.append( sCamString );
+	}
+	sFinal.append( sFogString );
+	g_MapEntities.assign( sFinal.c_str() );
+	return g_MapEntities.c_str();

@@ -1,0 +1,33 @@
+void AWE_TraceSpecial(int Pidx)
+{
+	edict_t *pEntity = Players[Pidx].pEntity;
+	Vector start = gVFunc.EyePosition(pEntity->GetUnknown()->GetBaseEntity());
+	QAngle eyes = gVFunc.EyeAngles(pEntity->GetUnknown()->GetBaseEntity());
+	Vector eyevec;
+	AngleVectors(eyes, &eyevec);
+	eyevec.NormalizeInPlace();
+
+	start += eyevec*64;
+	Vector end = start + eyevec*1000;
+
+	trace_t tr;
+	Ray_t ray;
+	ray.Init( start, end );
+
+	CTraceFilterHitAll traceFilter;
+	m_EngineTrace->TraceRay(ray, MASK_SHOT, &traceFilter, &tr );
+
+	META_CONPRINTF("Trace: %p", tr.m_pEnt);
+	if (tr.m_pEnt)
+	{
+		if (FStrEq(tr.m_pEnt->edict()->GetClassName(), "player"))
+		{
+			edict_t *pVictim = tr.m_pEnt->edict();
+			if (UTIL_GetTeam(Players[Pidx].pEntity)!=UTIL_GetTeam(pVictim))
+			{
+				AWE_Special(Players[Pidx].AweClass, Players[Pidx].pEntity, pVictim, tr.startpos, tr.endpos);
+				Players[Pidx].HasSpecial = false;
+			}
+		}
+	}
+}

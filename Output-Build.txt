@@ -1,0 +1,43 @@
+1>------ Build started: Project: zombie_mm, Configuration: Paid1 Win32 ------
+1>Compiling...
+1>ZombiePlugin.cpp
+1>.\ZombiePlugin.cpp(1317) : error C2143: syntax error : missing ';' before 'if'
+1>.\ZombiePlugin.cpp(1317) : error C3867: 'CBaseEdict::GetClassNameA': function call missing argument list; use '&CBaseEdict::GetClassNameA' to create a pointer to member
+1>.\ZombiePlugin.cpp(1337) : error C2665: 'V_stristr' : none of the 2 overloads could convert all the argument types
+1>        c:\code\c\hl2sdk\cstrike\public\tier1/strtools.h(114): could be 'char *V_stristr(char *,const char *)'
+1>        c:\code\c\hl2sdk\cstrike\public\tier1/strtools.h(115): or 'const char *V_stristr(const char *,const char *)'
+1>        while trying to match the argument list '(edict_t *, const char [6])'
+1>.\ZombiePlugin.cpp(5175) : warning C4309: 'initializing' : truncation of constant value
+1>.\ZombiePlugin.cpp(5182) : warning C4309: 'initializing' : truncation of constant value
+1>.\ZombiePlugin.cpp(5182) : warning C4309: 'initializing' : truncation of constant value
+1>.\ZombiePlugin.cpp(5182) : warning C4309: 'initializing' : truncation of constant value
+1>.\ZombiePlugin.cpp(5182) : warning C4309: 'initializing' : truncation of constant value
+1>.\ZombiePlugin.cpp(5182) : warning C4309: 'initializing' : truncation of constant value
+1>.\ZombiePlugin.cpp(5182) : warning C4309: 'initializing' : truncation of constant value
+1>ZM_Util.cpp
+1>C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\include\winnt.h(950) : warning C4005: 'ARRAYSIZE' : macro redefinition
+1>        c:\code\c\hl2sdk\cstrike\public\tier0\commonmacros.h(35) : see previous definition of 'ARRAYSIZE'
+1>VFunc.cpp
+1>C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\include\winnt.h(950) : warning C4005: 'ARRAYSIZE' : macro redefinition
+1>        c:\code\c\hl2sdk\cstrike\public\tier0\commonmacros.h(35) : see previous definition of 'ARRAYSIZE'
+1>SDK.cpp
+1>C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\include\winnt.h(950) : warning C4005: 'ARRAYSIZE' : macro redefinition
+1>        c:\code\c\hl2sdk\cstrike\public\tier0\commonmacros.h(35) : see previous definition of 'ARRAYSIZE'
+1>myutils.cpp
+1>C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\include\winnt.h(950) : warning C4005: 'ARRAYSIZE' : macro redefinition
+1>        c:\code\c\hl2sdk\cstrike\public\tier0\commonmacros.h(35) : see previous definition of 'ARRAYSIZE'
+1>MRecipients.cpp
+1>C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\include\winnt.h(950) : warning C4005: 'ARRAYSIZE' : macro redefinition
+1>        c:\code\c\hl2sdk\cstrike\public\tier0\commonmacros.h(35) : see previous definition of 'ARRAYSIZE'
+1>mathlib.cpp
+1>Events.cpp
+1>C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\include\winnt.h(950) : warning C4005: 'ARRAYSIZE' : macro redefinition
+1>        c:\code\c\hl2sdk\cstrike\public\tier0\commonmacros.h(35) : see previous definition of 'ARRAYSIZE'
+1>cvars.cpp
+1>C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\include\winnt.h(950) : warning C4005: 'ARRAYSIZE' : macro redefinition
+1>        c:\code\c\hl2sdk\cstrike\public\tier0\commonmacros.h(35) : see previous definition of 'ARRAYSIZE'
+1>CSigMngr.cpp
+1>Generating Code...
+1>Build log was saved at "file://c:\Code\C\ZombieMod_mm\Paid1\BuildLog.htm"
+1>zombie_mm - 3 error(s), 14 warning(s)
+========== Build: 0 succeeded, 1 failed, 0 up-to-date, 0 skipped ==========

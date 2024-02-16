@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zombie_mm", "zombie_mm.vcproj", "{FAFF34FB-FE14-47B5-81BD-70D237392FB2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		BOT|Win32 = BOT|Win32
+		cstrike|Win32 = cstrike|Win32
+		DOD|Win32 = DOD|Win32
+		Icepick|Win32 = Icepick|Win32
+		Listen|Win32 = Listen|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAFF34FB-FE14-47B5-81BD-70D237392FB2}.BOT|Win32.ActiveCfg = BOT|Win32
+		{FAFF34FB-FE14-47B5-81BD-70D237392FB2}.BOT|Win32.Build.0 = BOT|Win32
+		{FAFF34FB-FE14-47B5-81BD-70D237392FB2}.cstrike|Win32.ActiveCfg = cstrike|Win32
+		{FAFF34FB-FE14-47B5-81BD-70D237392FB2}.cstrike|Win32.Build.0 = cstrike|Win32
+		{FAFF34FB-FE14-47B5-81BD-70D237392FB2}.DOD|Win32.ActiveCfg = DOD|Win32
+		{FAFF34FB-FE14-47B5-81BD-70D237392FB2}.DOD|Win32.Build.0 = DOD|Win32
+		{FAFF34FB-FE14-47B5-81BD-70D237392FB2}.Icepick|Win32.ActiveCfg = Icepick|Win32
+		{FAFF34FB-FE14-47B5-81BD-70D237392FB2}.Icepick|Win32.Build.0 = Icepick|Win32
+		{FAFF34FB-FE14-47B5-81BD-70D237392FB2}.Listen|Win32.ActiveCfg = Listen|Win32
+		{FAFF34FB-FE14-47B5-81BD-70D237392FB2}.Listen|Win32.Build.0 = Listen|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,47 @@
+Hook Engine_UserMessageBegin
+
+For radar, 26 set to 2
+
+ClientPrint_hook
+
+ClientCommand
+
+ClientActive
+
+void CheckAutobuy(int nIndex, CBasePlayer* pPlayer) {
+
+bool CanUseWeapon(
+
+DEFVFUNC(Player_Touch,
+
+DEFVFUNC(Player_Weapon_CanUse,
+
+DEFVFUNC(Player_Weapon_CanSwitchTo,
+
+
+bool AllowWeapon
+
+PLUGIN_CON_COMMAND(nm_zombies,
+
+PLUGIN_CON_COMMAND(nm_zombie_player
+
+PLUGIN_CON_COMMAND(scream,
+
+FireGameEvent
+
+
+DEFVFUNC(Weapon_Knife_GetMaxSpeed
+
+DEFVFUNC(Player_PlayStepSound,
+
+DEFVFUNC(Player_UpdateStepSound,
+
+DEFVFUNC(Player_Event_Killed,
+
+DEFVFUNC(Player_OnTakeDamage_Alive,
+
+DEFVFUNC(Player_Spawn,
+
+void ZombieOff() 
+
+void ZombieOn()

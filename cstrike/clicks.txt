@@ -1,0 +1,17 @@
+1%%2006/05/11%%http://www.zombiemod.com/files/zombiemod_v1.0.0.zip%%130%%ZombieMod 1.0.0
+2%%2006/05/11%%http://www.zombiemod.com/files/zombiemod_v1.0.1.zip%%345%%ZombieMod 1.0.1
+3%%2006/05/13%%http://www.gfx-pros.com/downloads/zombiemod_v1.0.1.zip%%21%%GFX Mirror ZombieMod 1.0.1
+4%%2006/05/13%%http://www.kingpinservers.com/hosted/hl2/zombiemod_v1.0.1.zip%%22%%KingPin Mirror ZombieMod 1.0.1
+5%%2006/05/13%%http://rapidshare.de/files/20226261/zombiemod_v1.0.1.zip.html%%13%%RapidShare Mirror ZombieMod 1.0.1
+6%%2006/05/13%%http://66.246.72.172/srcds_l/zombiemod_v1.0.1.zip%%31%%CSSMC Mirror ZombieMod 1.0.1
+7%%2006/05/15%%http://www.zombiemod.com/files/zombiemod_v1.0.2.zip%%411%%ZombieMod 1.0.2
+8%%2006/05/25%%http://www.zombiemod.com/files/zombiemod_v1.2.3.zip%%10111%%ZombieMod 1.2.3
+9%%2006/05/27%%http://www.3ddownloads.com/Action/Counter-Strike%20Source/Mods/zombiemod_v1.1.0.zip%%16%%3D Downloads ZombieMod 1.1.0
+10%%2006/05/27%%http://c0ld.kingpinservers.us/zombiemod_v1.1.5.zip%%629%%KingPin Mirror ZombieMod 1.1.5
+11%%2006/06/12%%http://www.lobitinthereboss.com/files/MyMix.zip%%6%%MyMix
+12%%2006/07/12%%http://www.oir.ie/viewdoc.asp?DocID=6005%%54%%Dail Report
+13%%2006/07/12%%http://c0ld.kingpinservers.us/Report.zip%%10%%Report PDF
+14%%2006/08/26%%http://www.c0ld.net/files/prjSigFinder.zip%%11%%Sig Finder 1.0
+15%%2006/08/30%%http://www.zombienetwork.net/zombiemod/zombiemod_v1.2.2.zip%%40%%Zombie Network Mirror 1.2.2
+16%%2006/08/30%%http://www.nlfunhouse.com/zombiemod/zombiemod_v1.2.2.zip %%13%%NL FunHouse.com Mirror 1.2.2
+17%%2006/08/30%%http://www.uma.christiancs.com/files/zombiemod_v1.2.2.zip%%13%%United Mapping Alliance Mirror 1.2.2

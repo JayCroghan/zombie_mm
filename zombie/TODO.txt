@@ -1,0 +1,7 @@
+Play Step Sound ?
+
+Delay teams till first zombie.
+
+Add zombie_startup cvar.
+
+Respawn new clients into the game.

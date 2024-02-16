@@ -1,0 +1,39 @@
+Credits/Thanks go to the following...
+
+- Fysh
+For his original Nemod::zombie_mode and for making his source code public domain.
+
+- BAILOPAN www.sourcemm.net
+Alot of help with coding and SDK problems. Probably would have given up coding a long time ago if not but for!
+
+- PM
+The master of creation.
+
+- SauceHelmet
+An absolute magician with almost anything.
+
+- Lex Talionis
+Without him there would be no ZombieMod.
+
+- L. Duke www.lduke.com
+Another great guy who contributed alot of answers to silly questions =)
+
+- .robot www.zombiehorde.com
+Without his fantastic conversions of the original HL2 models there probably wouldn't be a ZombieMod.
+
+- Spinner www.cs-sourcemod.com
+For paying me to start the project, and then letting me use their dedicated box for testing.
+
+- http://www.sourcemod.com/forums
+Everyone who contributes to these forums. My making.
+
+- http://www.hellsgamers.com/forum_viewtopic.php?17.6509.20
+All the guys on that thread for their amazing artwork.
+
+- WazzGod
+For his linux test server.
+
+- YouzAMenace
+For his new speed method.
+
+- Anyone else I forgot let me know!!!

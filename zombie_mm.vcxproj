@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="BOT|Win32">
+      <Configuration>BOT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="cstrike|Win32">
+      <Configuration>cstrike</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DOD|Win32">
+      <Configuration>DOD</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Icepick|Win32">
+      <Configuration>Icepick</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Listen|Win32">
+      <Configuration>Listen</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Paid1|Win32">
+      <Configuration>Paid1</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{FAFF34FB-FE14-47B5-81BD-70D237392FB2}</ProjectGuid>
+    <RootNamespace>zombie_mm</RootNamespace>
+    <SccProjectName>"$/zombie_mm.root/zombie_mm", CAAAAAAA</SccProjectName>
+    <SccLocalPath>..</SccLocalPath>
+    <SccProvider>MSSCCI:Microsoft Visual SourceSafe</SccProvider>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Paid1|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='BOT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Icepick|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Listen|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DOD|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='cstrike|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Paid1|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='BOT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Icepick|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Listen|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DOD|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='cstrike|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.33312.129</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='cstrike|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>Release\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DOD|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Listen|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Icepick|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='BOT|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);d:\Old Machine\Code\c\sourcemod-1-3-4d6afc42522c\public;d:\Old Machine\Code\c\sourcemod-1-3-4d6afc42522c\public\extensions;d:\Old Machine\Code\c\sourcemod-1-3-4d6afc42522c\public\sourcepawn\;d:\Old Machine\Code\c\sourcemod-1-3-4d6afc42522c\core\;d:\Old Machine\Code\c\sourcemod-1-3-4d6afc42522c\core\extensions\sdktools\sdk\;d:\Old Machine\Code\c\mmsource-1-8-9c2b1e877e16\;d:\Old Machine\Code\c\mmsource-1-8-9c2b1e877e16\core\sourcehook;d:\Old Machine\Code\c\mmsource-1-8-9c2b1e877e16\core\;D:\Old Machine\Code\C\hl2sdk-ob-0f3afddb27c9\public\tier1;D:\Old Machine\Code\C\hl2sdk-ob-0f3afddb27c9\game\shared\;D:\Old Machine\Code\C\hl2sdk-ob-0f3afddb27c9\public\game\server;D:\Old Machine\Code\C\hl2sdk-ob-0f3afddb27c9\game\server\;D:\Old Machine\Code\C\hl2sdk-ob-0f3afddb27c9\public\;D:\Old Machine\Code\C\hl2sdk-ob-0f3afddb27c9\public\engine\;D:\Old Machine\Code\C\hl2sdk-ob-0f3afddb27c9\public\tier0\;D:\Old Machine\Code\C\hl2sdk-ob-0f3afddb27c9\public\tier1\;D:\Old Machine\Code\C\hl2sdk-ob-0f3afddb27c9\public\vstdlib\;D:\Old Machine\Code\C\hl2sdk-ob-0f3afddb27c9\tier1\;D:\Old Machine\Code\C\hl2sdk-ob-0f3afddb27c9\public\mathlib\;</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Paid1|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='cstrike|Win32'">
+    <CustomBuildStep>
+      <Command>copy "C:\Code\c\zombiemod_mm\Release\zombie_mm.dll" C:\HLDS\orangebox\cstrike\addons\zombiemod\bin\
+</Command>
+      <Outputs>zombie_mm.dll;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\sdk;$(SOURCEMOD)\public;$(SOURCEMOD)\core;$(SOURCEMOD)\public\extensions;$(SOURCEMOD)\public\sourcepawn;$(HL2SDKOBVALVE)\game\shared;$(HL2SDKOBVALVE)\public\game\server;$(HL2SDKOBVALVE)\game\server;$(HL2SDKOBVALVE)\public;$(HL2SDKOBVALVE)\public\engine;$(HL2SDKOBVALVE)\public\tier0;$(HL2SDKOBVALVE)\public\tier1;$(HL2SDKOBVALVE)\public\vstdlib;$(HL2SDKOBVALVE)\tier1;$(MMSOURCE18);$(MMSOURCE18)\core;$(MMSOURCE18)\core\sourcehook;$(HL2SDKOBVALVE)\public\mathlib;$(SOURCEMOD)\extensions\sdktools\sdk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;ZOMBIE_MM_EXPORTS;_CRT_SECURE_NO_DEPRECATE;_BETA=1;ORANGEBOX_BUILD=1;SOURCE_ENGINE=4;THREADSAFE;SQLITE_OMIT_LOAD_EXTENSION;SM_DEFAULT_THREADER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <PrecompiledHeader />
+      <ExpandAttributedSource>true</ExpandAttributedSource>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(HL2SDKOBVALVE)\lib\public\tier1.lib;$(HL2SDKOBVALVE)\lib\public\vstdlib.lib;$(HL2SDKOBVALVE)\lib\public\tier0.lib;$(HL2SDKOBVALVE)\lib\public\mathlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)zombie_mm.dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <ImportLibrary>$(OutDir)zombie_mm.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DOD|Win32'">
+    <CustomBuildStep>
+      <Command>copy "E:\coding\c\zombiemod_mm\Release\zombie_mm.dll" C:\HLDS\dod\addons\zombiemod\bin\
+</Command>
+      <Outputs>zombie_mm.dll;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;PROJECTX_MM_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <ExpandAttributedSource>true</ExpandAttributedSource>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>tier0.lib;vstdlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)zombie_mm.dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <ImportLibrary>$(OutDir)zombie_mm.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Listen|Win32'">
+    <CustomBuildStep>
+      <Command>copy "E:\coding\c\zombiemod_mm\listen\zombie_mm.dll" "E:\Games\Steam\SteamApps\c0ld%40c0ld.net\counter-strike source\cstrike\addons\zombiemod\bin"
+copy "E:\Games\Steam\SteamApps\c0ld%40c0ld.net\counter-strike source\cstrike\GameInfo.txt.mms" "E:\Games\Steam\SteamApps\c0ld%40c0ld.net\counter-strike source\cstrike\GameInfo.txt"
+</Command>
+      <Outputs>zombie_mm.dll;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;PROJECTX_MM_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <ExpandAttributedSource>true</ExpandAttributedSource>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>tier0.lib;vstdlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)zombie_mm.dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <ImportLibrary>$(OutDir)zombie_mm.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Icepick|Win32'">
+    <CustomBuildStep>
+      <Command>copy "E:\coding\c\zombiemod_mm\Icepick\zombie_mm.dll" C:\HLDS\cstrike\addons\zombiemod\bin\
+</Command>
+      <Outputs>zombie_mm.dll;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;ZOMBIE_MM_EXPORTS;_CRT_SECURE_NO_DEPRECATE;_ICEPICK;_BETA;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <ExpandAttributedSource>true</ExpandAttributedSource>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>tier0.lib;tier1.lib;vstdlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)zombie_mm.dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <ImportLibrary>$(OutDir)zombie_mm.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='BOT|Win32'">
+    <CustomBuildStep>
+      <Command>copy "E:\coding\c\zombiemod_mm\Bot\zombie_mm.dll" C:\HLDS\cstrike\addons\zombiemod\bin\
+</Command>
+      <Outputs>zombie_mm.dll;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;ZOMBIE_MM_EXPORTS;_CRT_SECURE_NO_DEPRECATE;_BETA;JC_BOT;%(PreprocessorDefinitions);ORANGEBOX_BUILD</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <ExpandAttributedSource>true</ExpandAttributedSource>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>tier0.lib;tier1.lib;vstdlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)zombie_mm.dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <ImportLibrary>$(OutDir)zombie_mm.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Paid1|Win32'">
+    <CustomBuildStep>
+      <Command>copy "C:\Code\c\zombiemod_mm\Paid1\zombie_mm.dll" C:\HLDS\cstrike\addons\zombiemod\bin\
+</Command>
+      <Outputs>zombie_mm.dll;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;ZOMBIE_MM_EXPORTS;_CRT_SECURE_NO_DEPRECATE;_BETA;_PAID1;PAID1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <ExpandAttributedSource>true</ExpandAttributedSource>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>tier0.lib;tier1.lib;vstdlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)zombie_mm.dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <ImportLibrary>$(OutDir)zombie_mm.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="cp-demangle.cpp" />
+    <ClCompile Include="cp-demint.cpp" />
+    <ClCompile Include="cplus-dem.cpp" />
+    <ClCompile Include="CSigManager.cpp" />
+    <ClCompile Include="css_offsets.cpp" />
+    <ClCompile Include="cvars.cpp" />
+    <ClCompile Include="Events.cpp" />
+    <ClCompile Include="mathlib.cpp" />
+    <ClCompile Include="MRecipients.cpp" />
+    <ClCompile Include="myutils.cpp" />
+    <ClCompile Include="safe-ctype.cpp" />
+    <ClCompile Include="SDK.cpp" />
+    <ClCompile Include="sm_trie.cpp" />
+    <ClCompile Include="VFunc.cpp" />
+    <ClCompile Include="xmalloc.cpp" />
+    <ClCompile Include="xstrdup.cpp" />
+    <ClCompile Include="ZMClass.cpp" />
+    <ClCompile Include="ZMPlayer.cpp" />
+    <ClCompile Include="zm_linuxutils.cpp" />
+    <ClCompile Include="zm_memory.cpp" />
+    <ClCompile Include="ZM_Util.cpp" />
+    <ClCompile Include="ZombiePlugin.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="cstrike\addons\zombiemod\ChangeLog.txt">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='cstrike|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="TODO.txt">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='cstrike|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Makefile">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='cstrike|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Version.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ansidecl.h" />
+    <ClInclude Include="cp-demangle.h" />
+    <ClInclude Include="CSigManager.h" />
+    <ClInclude Include="css_offsets.h" />
+    <ClInclude Include="cs_weapon_parse.h" />
+    <ClInclude Include="CTakeDamageInfo.h" />
+    <ClInclude Include="cvars.h" />
+    <ClInclude Include="demangle.h" />
+    <ClInclude Include="Events.h" />
+    <ClInclude Include="libiberty.h" />
+    <ClInclude Include="meta_hooks.h" />
+    <ClInclude Include="MRecipients.h" />
+    <ClInclude Include="myutils.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="safe-ctype.h" />
+    <ClInclude Include="sm_trie.h" />
+    <ClInclude Include="Timers.h" />
+    <ClInclude Include="VFunc.h" />
+    <ClInclude Include="weapon_csbase.h" />
+    <ClInclude Include="ZMClass.h" />
+    <ClInclude Include="ZMPlayer.h" />
+    <ClInclude Include="zm_includesdk.h" />
+    <ClInclude Include="zm_linuxutils.h" />
+    <ClInclude Include="zm_memory.h" />
+    <ClInclude Include="ZM_Util.h" />
+    <ClInclude Include="ZombiePlugin.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

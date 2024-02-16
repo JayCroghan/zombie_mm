@@ -1,0 +1,20 @@
+zombie_model_file	"cfg/zombiemod/models.cfg"	// File with list of models to use for zombie mod
+zombie_download_file	"cfg/zombiemod/downloads.cfg"	// File with list of materials etc to download.
+zombie_sound_rand	50				// How often zombies play zombie sounds
+zombie_health		2500				// Health that zombies get on zombification. First zombie is this * 2.
+zombie_maxspeed		190.0				// The speed that zombies travel at.
+zombie_fov		125				// Field of vision of the zombies. Normal human FOV is 90.
+zombie_knockback	3				// The knockback multiplier of zombies. Set to 0 to disable knockback.
+zombie_restrictions	"rifles m249			// Space separated list of guns that are restricted during zombie mode.
+zombie_dark		1				// Makes maps very dark if enabled. If disabled, the map doesn't have to be reloaded to start zombiemode.
+zombie_bonus		1				// Add frags for zombifying other players.
+zombie_teams		0				// Sets teams Humans = CT; Zombies = T
+zombie_respawn		0				// If enabled, respawn after a set amount of time.
+zombie_respawn_delay	1.0				// Time before players are respawned in autorespawn mode
+zombie_max_ammo		1				// If enabled, ammo is unlimited.
+zombie_talk		1				// If enabled, zombies can only voice with zombies and humans with humans.
+zombie_tracer		0				// Enable tracers.
+zombie_tracer_count	4				// Tracers every nth bullet.
+zombie_tracer_all	0				// If enabled, all players see each others tracers.
+zombie_suicide		1				// When 1, disables players from suiciding.
+zombie_suicide_text	"Dont be an asshole."		// Text for suiciding assholes.
